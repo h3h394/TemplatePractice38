@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practice</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav-module hidden">
+        <div class="heading">
+            <div class="info">
+                <h2>YOUR CART</h2>
+                <i class="fas fa-times fa-lg" id="closeModule"></i>
+            </div>
+        </div>
+        <div class="shopping">
+            <a href="#" class="btn">No items found.</a>
+            <a href="#" class="btn">CONTINUE SHOPPING</a>
+        </div>
+    </div>
+
+    <div class="video-module hide">
+        <iframe width="940" height="528" src="https://www.youtube.com/embed/24fdcMw0Bj0?start=9" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <i class="fas fa-times fa-lg" id="close"></i>
+    </div>
+
+    <div class="gallery-module hide">
+        <i class="fas fa-chevron-left fa-2x" id="previousBtn" onclick="previousBtn(event)"></i>
+        <div class="picture">
+        </div>
+        <i class="fas fa-chevron-right fa-2x" id="nextBtn" onclick="nextBtn(event)"></i>
+        <i class="fas fa-times fa-lg" id="closeGallery"></i>
+    </div>
+
+    <nav>
+        <div class="top-wrap">
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+            <i class="fas fa-bars fa-lg" id="burger"></i>
+        </div>
+        <div class="menu-wrap menuHide">
+            <div class="top-menu">
+                <div class="links">
+                    <a href="#">GYM</a>
+                    <a href="#">STORE</a>
+                    <a href="#">BLOG</a>
+                    <a href="#">FAQ</a>
+                </div>
+                <div class="time">
+                    <p><i class="far fa-clock fa-lg"></i>Mon -Sun: 6am - 8pm</p>
+                    <p><i class="fas fa-phone fa-lg"></i>07911 789456</p>
+                    <p><i class="fas fa-envelope fa-lg"></i>office@xtreme.com</p>
+                </div>
+            </div>
+            <div class="bottom-menu">
+                <a href="#home" class="active">HOME</a>
+                <a href="#about">ABOUT US</a>
+                <a href="#gallery">GALLERY</a>
+                <a href="#classes">CLASSES</a>
+                <a href="#schedule">SCHEDULE</a>
+                <a href="#pricing">PRICING</a>
+                <a href="#contact">CONTACT</a>
+            </div>
+        </div>
+        <div class="cart" id="openModule">
+            <i class="fas fa-shopping-cart fa-lg"></i>
+            <p>0</p>
+        </div>
+    </nav>
+
+    <section class="main" id="home">
+        <div class="container">
+            <div class="desc">
+                <p>VOTED BEST GYM IN 2019</p>
+                <div class="info">
+                    <div class="divider"></div>
+                    <p>ESTABLISHED IN 2003</p>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="img/main-logo.svg" alt="logo1">
+                <h1>XTREME <span>ARENAS</span></h1>
+            </div>
+            <div class="wrap">
+                <div class="socials">
+                    <div class="links">
+                        <div class="icon-wrap"><i class="fab fa-facebook-f fa-lg"></i></div>
+                        <div class="icon-wrap"><i class="fab fa-twitter fa-lg"></i></div>
+                        <div class="icon-wrap"><i class="fab fa-instagram fa-lg"></i></div>
+                    </div>
+                    <div class="divider"></div>
+                </div>
+                <div class="newsletter">
+                    <input type="email" name="Email" placeholder="Newsletter (enter email)">
+                    <a href="#"><i class="far fa-paper-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="showcase">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <div class="pic"></div>
+                    <div class="desc">
+                        <div class="date">
+                            <p>HABITS</p>
+                            <p>•</p>
+                            <p>05/2019</p>
+                        </div>
+                        <h4>5 DYNAMIC STRETCHES FOR YOUR UPPER BODY</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="pic"></div>
+                    <div class="desc">
+                        <div class="date">
+                            <p>NUTRITION</p>
+                            <p>•</p>
+                            <p>05/2019</p>
+                        </div>
+                        <h4>ARE BULGARIAN BAGS THE BEST NEW FITNESS TOOL?</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="pic"></div>
+                    <div class="desc">
+                        <div class="date">
+                            <p>NUTRITION</p>
+                            <p>•</p>
+                            <p>05/2019</p>
+                        </div>
+                        <h4>DOES EXERCISE MAKE YOU HAPPIER THAN MONEY?</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="pic"></div>
+                    <div class="desc">
+                        <div class="date">
+                            <p>EXERCISE</p>
+                            <p>•</p>
+                            <p>05/2019</p>
+                        </div>
+                        <h4>3 POST-WORKOUT MISTAKES AND HOW TO FIX THEM</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="wrap">
+            <h2>XTREEM <span>CLASSES</span></h2>
+            <div class="divider-wrap">
+                <div class="divider"></div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="btn-wrap">
+                    <div class="icon-wrapper"><i class="fas fa-play fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <div class="heading">
+                        <h2>RESPECT YOUR BODY, IT'S<br> THE ONLY ONE YOU GET</h2>
+                    </div>
+                    <p>‍Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim magna, condimentum at
+                        imperdiet ac.</p>
+                    <p>Aliquam erat volutpat. Donec elit nibh, luctus eu nisi eu, tempus condimentum ipsum. Nunc euismod
+                        viverra ante vel imperdiet. In pretium sagittis neque nec lacinia. Integer lorem odio, lobortis
+                        et odio eu, ullamcorper placerat arcu.</p>
+                    <div class="row">
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Free Wi-Fi</p>
+                        </div>
+                        <div class="box bd">
+                            <p class="dot">•</p>
+                            <p>Free Parking</p>
+                        </div>
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Free Weights</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>+50 Trainers</p>
+                        </div>
+                        <div class="box bd">
+                            <p class="dot">•</p>
+                            <p>+50k Clients</p>
+                        </div>
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>+50 Arenas</p>
+                        </div>
+                    </div>
+                    <a href="#">SUBSCRIBE TODAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="card">
+                <div class="box">
+                    <div class="heading">
+                        <div class="pic"></div>
+                        <div class="info">
+                            <span>Designer</span>
+                            <h4>AUDREY BROWN</h4>
+                        </div>
+                        <img src="img/quote.svg" alt="quote">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget metus est morbi ullamcorper
+                        faucibus, urna lectus feugiat</p>
+                    <div class="rating">
+                        <div class="rating-wrap">
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="far fa-star fa-xs"></i>
+                            <i class="far fa-star fa-xs"></i>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="heading">
+                        <div class="pic"></div>
+                        <div class="info">
+                            <span>Designer</span>
+                            <h4>DAVID SMITH</h4>
+                        </div>
+                        <img src="img/quote.svg" alt="quote">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget metus est morbi ullamcorper
+                        faucibus, urna lectus feugiat</p>
+                    <div class="rating">
+                        <div class="rating-wrap">
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star-half-alt fa-xs"></i>
+                            <i class="far fa-star fa-xs"></i>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="heading">
+                        <div class="pic"></div>
+                        <div class="info">
+                            <span>Designer</span>
+                            <h4>LUCAS SMITH</h4>
+                        </div>
+                        <img src="img/quote.svg" alt="quote">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget metus est morbi ullamcorper
+                        faucibus, urna lectus feugiat</p>
+                    <div class="rating">
+                        <div class="rating-wrap">
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <div class="heading">
+                        <div class="pic"></div>
+                        <div class="info">
+                            <span>Designer</span>
+                            <h4>RACHEL GREEN</h4>
+                        </div>
+                        <img src="img/quote.svg" alt="quote">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget metus est morbi ullamcorper
+                        faucibus, urna lectus feugiat</p>
+                    <div class="rating">
+                        <div class="rating-wrap">
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="fas fa-star fa-xs"></i>
+                            <i class="far fa-star fa-xs"></i>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="card">
+                <div class="btn-wrap">
+                    <div class="wrapper-icon"><i class="fas fa-search fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="btn-wrap">
+                    <div class="wrapper-icon"><i class="fas fa-search fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="btn-wrap">
+                    <div class="wrapper-icon"><i class="fas fa-search fa-lg"></i></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="btn-wrap">
+                    <div class="wrapper-icon"><i class="fas fa-search fa-lg"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="classes" id="classes">
+        <div class="wrap">
+            <h2>XTREEM <span>CLASSES</span></h2>
+            <div class="divider-wrap">
+                <div class="divider"></div>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card"></div>
+            <div class="card">
+                <div class="info">
+                    <div class="heading">
+                        <h2>THE BEST WAY TO PREDICT<br> THE FUTURE IS TO CREATE IT</h2>
+                    </div>
+                    <p>‍Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin enim magna, condimentum at
+                        imperdiet ac.</p>
+                    <p>Aliquam erat volutpat. Donec elit nibh, luctus eu nisi eu, tempus condimentum ipsum. Nunc euismod
+                        viverra ante vel imperdiet. In pretium sagittis neque nec lacinia. Integer lorem odio, lobortis
+                        et odio eu, ullamcorper placerat arcu.</p>
+                    <div class="row">
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Cardio</p>
+                        </div>
+                        <div class="box bd">
+                            <p class="dot">•</p>
+                            <p>Aaerobic</p>
+                        </div>
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Fitness</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Cycling</p>
+                        </div>
+                        <div class="box bd">
+                            <p class="dot">•</p>
+                            <p>Yoga</p>
+                        </div>
+                        <div class="box">
+                            <p class="dot">•</p>
+                            <p>Muai Tai</p>
+                        </div>
+                    </div>
+                    <a href="#">SUBSCRIBE TODAY</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+        <p>SCHEDULE</p>
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="card">
+                <div class="heading linkWrap">
+                    <a href="#/" class="active">S</a>
+                    <a href="#/">M</a>
+                    <a href="#/">T</a>
+                    <a href="#/">W</a>
+                    <a href="#/">T</a>
+                    <a href="#/">F</a>
+                    <a href="#/">S</a>
+                </div>
+                <div class="desc-wrap">
+                    <div class="box">
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Cardio</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 6am - 8am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Aerobic</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 8am - 10am</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Yoga</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 10am - 12pm</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Crossfit</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 12pm - 2pm</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Cycling</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 2pm - 4pm</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Fitness</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 4pm - 6pm</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Muai Tai</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 6pm - 8pm</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="p-first">
+                                <p>Pilates</p>
+                            </div>
+                            <div class="divider"></div>
+                            <div class="p-second">
+                                <p>&#9642; 8pm - 10pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="desc">
+                    <h2>FREE PASS</h2>
+                    <div class="divide-wrap">
+                        <div class="divide"></div>
+                        <div class="divide"></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <input type="text" name="Name" placeholder="Enter your name">
+                    <input type="email" name="Email" placeholder="Enter your email">
+                    <input type="text" name="Phone" placeholder="Enter your phone">
+                    <a href="#">get a free 3 days pass</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="card">
+                <div class="info">
+                    <h2>29$</h2>
+                    <span>BRONZE</span>
+                    <h3>MEMBERSHIP</h3>
+                    <ul>
+                        <li>Sed viverra nunc evarius</li>
+                        <li>Sed elit purus vehiculam</li>
+                        <li>Mauris malesua enim</li>
+                        <li>Fusce quis pellentesqueq</li>
+                        <li>Sed tincidunt scelerisque</li>
+                    </ul>
+                    <a href="#">subscribe today</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h2>49$</h2>
+                    <span>SILVER</span>
+                    <h3>MEMBERSHIP</h3>
+                    <ul>
+                        <li>Sed viverra nunc evarius</li>
+                        <li>Sed elit purus vehiculam</li>
+                        <li>Mauris malesua enim</li>
+                        <li>Fusce quis pellentesqueq</li>
+                        <li>Sed tincidunt scelerisque</li>
+                    </ul>
+                    <a href="#">subscribe today</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h2>69$</h2>
+                    <span>GOLD</span>
+                    <h3>MEMBERSHIP</h3>
+                    <ul>
+                        <li>Sed viverra nunc evarius</li>
+                        <li>Sed elit purus vehiculam</li>
+                        <li>Mauris malesua enim</li>
+                        <li>Fusce quis pellentesqueq</li>
+                        <li>Sed tincidunt scelerisque</li>
+                    </ul>
+                    <a href="#">subscribe today</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="info">
+                    <h2>89$</h2>
+                    <span>PLATINIUM</span>
+                    <h3>MEMBERSHIP</h3>
+                    <ul>
+                        <li>Sed viverra nunc evarius</li>
+                        <li>Sed elit purus vehiculam</li>
+                        <li>Mauris malesua enim</li>
+                        <li>Fusce quis pellentesqueq</li>
+                        <li>Sed tincidunt scelerisque</li>
+                    </ul>
+                    <a href="#">subscribe today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="wrap">
+            <h2>LATEST<span>PRODUCTS</span></h2>
+            <div class="divider"></div>
+            <div class="divider"></div>
+        </div>
+        <div class="container">
+            <div class="card">
+                <div class="pic">
+                    <h3>$257.85</h3>
+                    <p>$207.30</p>
+                    <img src="img/product1.png" alt="product1">
+                </div>
+                <div class="desc">
+                    <span>ACCESORIES</span>
+                    <h4>XTREME ARENAS GYM T-SHIRT RIDER XT-024 HDE-X</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$586.56</h3>
+                    <p>$879.69</p>
+                    <img src="img/product2.png" alt="product2">
+                </div>
+                <div class="desc">
+                    <span>FOOTWEAR</span>
+                    <h4>XTREME ARENAS RUNNING SHOES RIDER XT-044 HDE-T</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$257.52</h3>
+                    <p>$325.57</p>
+                    <img src="img/product3.png" alt="product3">
+                </div>
+                <div class="desc">
+                    <span>ACCESSORIES</span>
+                    <h4>XTREME ARENAS SPORT BAG RIDER SB-099 HDE-XT</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$245.50</h3>
+                    <img src="img/product4.png" alt="product4">
+                </div>
+                <div class="desc">
+                    <span>FOOTWEAR</span>
+                    <h4>XTREME ARENAS RUNNING SHOES RIDER XT-024 HDE-X</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$325.50</h3>
+                    <p>$450.30</p>
+                    <img src="img/product5.png" alt="product5">
+                </div>
+                <div class="desc">
+                    <span>APPAREL</span>
+                    <h4>XTREME ARENAS GYM T-SHIRT RIDER RB-055 HDE-X</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$189.90</h3>
+                    <img src="img/product6.png" alt="product6">
+                </div>
+                <div class="desc">
+                    <span>ACCESSORIES</span>
+                    <h4>XTREME ARENAS SPORT BAG RIDER SB-009 HDE-F</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$245.50</h3>
+                    <img src="img/product7.png" alt="product7">
+                </div>
+                <div class="desc">
+                    <span>FOOTWEAR</span>
+                    <h4>XTREME ARENAS RUNNING SHOES RIDER XT-004 HDE-F</h4>
+                </div>
+            </div>
+            <div class="card">
+                <div class="pic">
+                    <h3>$185.55</h3>
+                    <p>$235.70</p>
+                    <img src="img/product8.png" alt="product8">
+                </div>
+                <div class="desc">
+                    <span>APPAREL</span>
+                    <h4>XTREME ARENAS GYM T-SHIRT RIDER RB-005 HDE-F</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="map">
+        <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="600" height="380" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=london%20St%20James's%20Park&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <p>CONTACT</p>
+        <div class="overlay"></div>
+        <div class="card">
+            <div class="heading">
+                <h2>MESSAGE</h2>
+                <div class="divider"></div>
+                <div class="divider"></div>
+            </div>
+            <div class="box-wrap">
+                <div class="box">
+                    <input type="text" name="Name" placeholder="Enter your name">
+                    <input type="email" name="Email" placeholder="Enter your email">
+                    <input type="text" name="Phone" placeholder="Enter your phone">
+                </div>
+                <div class="box">
+                    <textarea name="Message" placeholder="Enter your message"></textarea>
+                </div>
+            </div>
+            <a href="#">SEND MESSAGE</a>
+        </div>
+        <div class="links">
+            <p><i class="far fa-clock fa-lg"></i>MON - SUN: 6 AM - 8 PM</p>
+            <p><i class="fas fa-phone fa-lg"></i>(+44) 7911 123456</p>
+            <p><i class="fas fa-map-marker-alt fa-lg"></i>50 XTREME STREET, LONDON, U.K.</p>
+            <p><i class="fas fa-envelope fa-lg"></i>OFFICE@XTREME.COM</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrap">
+                <div class="menu">
+                    <a href="#">TERMS</a>
+                    <a href="#">SHIPPING</a>
+                    <a href="#">RETURN</a>
+                    <a href="#">LICENSES</a>
+                    <a href="#">STYLES</a>
+                </div>
+                <div class="socials">
+                    <div class="divider"></div>
+                    <div class="box"><i class="fab fa-facebook-f fa-lg"></i></div>
+                    <div class="box"><i class="fab fa-twitter fa-lg"></i></div>
+                    <div class="box"><i class="fab fa-instagram fa-lg"></i></div>
+                    <div class="divider"></div>
+                </div>
+            </div>
+            <p>powered by<span> webflow.com</span></p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
